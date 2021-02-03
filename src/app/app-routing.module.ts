@@ -11,9 +11,9 @@ import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.c
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: IndexComponent },
-  { path: "profile", component: ProfilepageComponent },
-  { path: "register", component: RegisterpageComponent },
-  { path: "landing", component: LandingpageComponent }
+  { path: "yugioh", component: ProfilepageComponent },
+  { path: "genshin", component: RegisterpageComponent },
+  { path: "tft", component: LandingpageComponent }
 ];
 
 @NgModule({
