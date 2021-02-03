@@ -54,7 +54,7 @@
         <li class="nav-item p-0">
           <a
             class="nav-link"
-            href="https://twitter.com/CreativeTim"
+            href="https://twitter.com/stepback_letgo?lang=en"
             placement="bottom"
             target="_blank"
             tooltip="Follow us on Twitter"
@@ -66,7 +66,7 @@
         <li class="nav-item p-0">
           <a
             class="nav-link"
-            href="https://www.facebook.com/CreativeTim"
+            href="https://www.facebook.com/CalvinTahan"
             placement="bottom"
             target="_blank"
             tooltip="Like us on Facebook"
@@ -78,7 +78,7 @@
         <li class="nav-item p-0">
           <a
             class="nav-link"
-            href="https://www.instagram.com/CreativeTimOfficial"
+            href="https://www.instagram.com/stepbackletgo/?hl=en"
             placement="bottom"
             target="_blank"
             tooltip="Follow us on Instagram"
@@ -87,15 +87,33 @@
             <p class="d-lg-none d-xl-none">Instagram</p>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/home']"> Back to Kit </a>
+        <li class="dropdown nav-item" dropdown>
+          <a
+            class="dropdown-toggle nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            dropdownToggle
+            href="javascript:void(0)"
+          >
+            <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Menu
+          </a>
+          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+            <a class="dropdown-item" [routerLink]="['/register']">
+              <i class="tim-icons icon-planet"> </i> Genshin Impact
+            </a>
+            <a class="dropdown-item" [routerLink]="['/landing']">
+              <i class="tim-icons icon-coins"> </i> Teamfight Tactics
+            </a>
+            <a class="dropdown-item" [routerLink]="['/profile']">
+              <i class="tim-icons icon-shape-star"> </i> Yugioh
+            </a>
+          </div>
         </li>
         <li class="nav-item">
           <a
-            class="nav-link"
-            href="https://github.com/creativetimofficial/blk-design-system-angular/issues"
+            class="nav-link btn btn-default d-none d-lg-block"
+            href="https://www.twitch.tv/xxmadreloaderxx"
           >
-            Have an issue?
+            <i class="tim-icons icon-laptop"> </i> Follow on Twitch
           </a>
         </li>
       </ul>
@@ -122,45 +140,23 @@
       >
         <div class="col-lg-6 col-md-6">
           <h1 class="text-white">
-            We keep your coin <br />
+            We help you achieve  <br />
 
-            <span class="text-white"> secured </span>
+            <span class="text-white"> victories </span>
           </h1>
           <p class="text-white mb-3">
-            A wonderful serenity has taken possession of my entire soul, like
-            these sweet mornings of spring which I enjoy with my whole heart. I
-            am alone, and feel...
+            Let's be honest, you suck at Teamfight Tactics (TFT).
+            It's okay to not be good, but we are here to help!
+            With our expert training, we can get you out of elo hell from yourself.
           </p>
           <div class="btn-wrapper mb-3">
-            <p class="category text-success d-inline mr-1">From 9.99%/mo</p>
+            <p class="category text-success d-inline mr-1">From $9.99/mo</p>
             <a
               class="btn btn-success btn-link btn-sm"
               href="javascript:void(0)"
             >
               <i class="tim-icons icon-minimal-right"> </i>
             </a>
-          </div>
-          <div class="btn-wrapper">
-            <div class="button-container">
-              <button
-                class="btn btn-icon btn-simple btn-round btn-neutral mr-1"
-                href="javascript:void(0)"
-              >
-                <i class="fab fa-twitter"> </i>
-              </button>
-              <button
-                class="btn btn-icon btn-simple btn-round btn-neutral mr-1"
-                href="javascript:void(0)"
-              >
-                <i class="fab fa-dribbble"> </i>
-              </button>
-              <button
-                class="btn btn-icon btn-simple btn-round btn-neutral"
-                href="javascript:void(0)"
-              >
-                <i class="fab fa-facebook"> </i>
-              </button>
-            </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-5">
@@ -192,9 +188,9 @@
                       </div>
                       <div class="col-7 col-md-8">
                         <div class="numbers">
-                          <p class="card-title">3,237</p>
+                          <p class="card-title">17</p>
                           <p></p>
-                          <p class="card-category">Awards</p>
+                          <p class="card-category">Top 3 Finishes</p>
                         </div>
                       </div>
                     </div>
@@ -207,14 +203,14 @@
                     <div class="row">
                       <div class="col-5 col-md-4">
                         <div class="icon-big text-center icon-warning">
-                          <i class="tim-icons icon-coins text-white"> </i>
+                          <i class="tim-icons icon-controller text-white"> </i>
                         </div>
                       </div>
                       <div class="col-7 col-md-8">
                         <div class="numbers">
-                          <p class="card-title">3,653</p>
+                          <p class="card-title">3,651</p>
                           <p></p>
-                          <p class="card-category">Commits</p>
+                          <p class="card-category">Games Played</p>
                         </div>
                       </div>
                     </div>
@@ -229,14 +225,14 @@
                     <div class="row">
                       <div class="col-5 col-md-4">
                         <div class="icon-big text-center icon-warning">
-                          <i class="tim-icons icon-gift-2 text-info"> </i>
+                          <i class="tim-icons icon-headphones text-info"> </i>
                         </div>
                       </div>
                       <div class="col-7 col-md-8">
                         <div class="numbers">
                           <p class="card-title">593</p>
                           <p></p>
-                          <p class="card-category">Presents</p>
+                          <p class="card-category">Players Muted</p>
                         </div>
                       </div>
                     </div>
@@ -249,7 +245,7 @@
                     <div class="row">
                       <div class="col-5 col-md-4">
                         <div class="icon-big text-center icon-warning">
-                          <i class="tim-icons icon-credit-card text-success">
+                          <i class="tim-icons icon-user-run text-success">
                           </i>
                         </div>
                       </div>
@@ -257,7 +253,7 @@
                         <div class="numbers">
                           <p class="card-title">10,783</p>
                           <p></p>
-                          <p class="card-category">Forks</p>
+                          <p class="card-category">Units Built</p>
                         </div>
                       </div>
                     </div>
@@ -274,16 +270,15 @@
                 Achivements
               </h1>
               <p>
-                I should be capable of drawing a single stroke at the present
-                moment; and yet I feel that I never was a greater artist than
-                now.
+                We here at JORGE• (Capital) are godly players at TFT. 
+                We can teach you the ropes in no time for the right price.
               </p>
               <br />
 
               <p>
-                When, while the lovely valley teems with vapour around me, and
-                the meridian sun strikes the upper surface of the impenetrable
-                foliage of my trees, and but a few stray.
+                Look at the statistics. Honestly, you should've came to us sooner.
+                No worries though, you are in the right place to climb the ladder to
+                greatness. Only you are stopping you.
               </p>
               <br />
 
@@ -320,8 +315,9 @@
                 <hr class="line-primary" />
 
                 <p>
-                  Divide details about your work into parts. Write a few lines
-                  about each one. A paragraph describing a feature will.
+                  We only take fees from when you win games. If you lose any games,
+                  you get your money back, guranteed! We gurantee a Top 8 finish everytime
+                  you play with our instructions.
                 </p>
               </div>
             </div>
@@ -330,13 +326,13 @@
                 <div class="icon icon-warning">
                   <i class="tim-icons icon-chart-pie-36"> </i>
                 </div>
-                <h4 class="info-title">High Incomes</h4>
+                <h4 class="info-title">High Results</h4>
                 <hr class="line-warning" />
 
                 <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing
-                  feature will be a feature.
+                  Every game will be a guranteed victory (Top 8 placement or above).
+                  One of strongest beliefs is that high results leads to strong confidence.
+                  Better confidence leads to synergy. Synergy is important.
                 </p>
               </div>
             </div>
@@ -345,13 +341,12 @@
                 <div class="icon icon-success">
                   <i class="tim-icons icon-single-02"> </i>
                 </div>
-                <h4 class="info-title">Verified People</h4>
+                <h4 class="info-title">Verified Clients</h4>
                 <hr class="line-success" />
 
                 <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing be
-                  enough.
+                  Real people have tried our program and have been happy every time!
+                  We only have good stories from our clients. Please see the reviews!
                 </p>
               </div>
             </div>
@@ -372,7 +367,7 @@
             <div class="card-body">
               <div class="justify-content-center">
                 <div class="numbers">
-                  <p class="card-title">100%</p>
+                  <p class="card-title">50%</p>
                   <p class="card-category text-white">Safe</p>
                 </div>
               </div>
@@ -382,7 +377,7 @@
             <div class="card-body">
               <div class="justify-content-center">
                 <div class="numbers">
-                  <p class="card-title">573 K</p>
+                  <p class="card-title">6</p>
                   <p class="card-category text-white">Satisfied customers</p>
                 </div>
               </div>
@@ -393,7 +388,7 @@
               <div class="justify-content-center">
                 <div class="numbers">
                   <p class="card-title">10 425</p>
-                  <p class="card-category text-white">Business</p>
+                  <p class="card-category text-white">Players</p>
                 </div>
               </div>
             </div>
@@ -405,9 +400,8 @@
 
             <h3>Awesome features</h3>
             <p>
-              The design system comes with three pre-built pages to help you get
-              started faster. You can change the text and images and you're good
-              to go.
+              You are only met with the best advice, team, and strategies with JORGE•
+              Don't fear and just look at the graph below for our performance! Sign up right now!
             </p>
             <ul class="list-unstyled mt-5">
               <li class="py-2">
@@ -415,7 +409,7 @@
                   <div class="icon icon-success mb-2">
                     <i class="tim-icons icon-vector"> </i>
                   </div>
-                  <div class="ml-3"><h6>Carefully crafted components</h6></div>
+                  <div class="ml-3"><h6>Carefully crafted strategies</h6></div>
                 </div>
               </li>
               <li class="py-2">
@@ -423,7 +417,7 @@
                   <div class="icon icon-success mb-2">
                     <i class="tim-icons icon-tap-02"> </i>
                   </div>
-                  <div class="ml-3"><h6>Amazing page examples</h6></div>
+                  <div class="ml-3"><h6>Amazing build guidance</h6></div>
                 </div>
               </li>
               <li class="py-2">
@@ -452,7 +446,7 @@
             <div class="col-sm-6 text-left">
               <hr class="line-primary" />
 
-              <h5 class="card-category">Total Investments</h5>
+              <h5 class="card-category">Total TFT Games</h5>
               <h2 class="card-title">Performance</h2>
             </div>
           </div>
@@ -472,7 +466,7 @@
           <hr class="line-info" />
 
           <h1>
-            Choose the coin
+            Choose the plan
             <span class="text-info"> that fits your needs </span>
           </h1>
         </div>
@@ -486,16 +480,17 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12 text-center">
-                  <h4 class="text-uppercase">Light Coin</h4>
-                  <span> Plan </span>
+                  <h4 class="text-uppercase">Iron</h4>
+                  <span> $9.99 </span>
                   <hr class="line-primary" />
                 </div>
               </div>
               <div class="row">
                 <ul class="list-group">
-                  <li class="list-group-item">50 messages</li>
-                  <li class="list-group-item">100 emails</li>
-                  <li class="list-group-item">24/7 Support</li>
+                  <li class="list-group-item">10 games</li>
+                  <li class="list-group-item">Reach Iron rank</li>
+                  <li class="list-group-item">50% chance of advice or silence</li>
+                  <li class="list-group-item">Teaches 0 viable comps</li>
                 </ul>
               </div>
             </div>
@@ -512,16 +507,17 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12 text-center">
-                  <h4 class="text-uppercase">Dark Coin</h4>
-                  <span> Plan </span>
+                  <h4 class="text-uppercase">Silver</h4>
+                  <span> $19.99 </span>
                   <hr class="line-success" />
                 </div>
               </div>
               <div class="row">
                 <ul class="list-group">
-                  <li class="list-group-item">150 messages</li>
-                  <li class="list-group-item">1000 emails</li>
-                  <li class="list-group-item">24/7 Support</li>
+                  <li class="list-group-item">50 games</li>
+                  <li class="list-group-item">Reach Silver rank</li>
+                  <li class="list-group-item">Complete silence</li>
+                  <li class="list-group-item">Teaches 3 viable comps</li>
                 </ul>
               </div>
             </div>
@@ -538,16 +534,19 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12 text-center">
-                  <h4 class="text-uppercase">Bright Coin</h4>
-                  <span> Plan </span>
+                  <h4 class="text-uppercase">Diamond</h4>
+                  <span> $5000.00 </span>
                   <hr class="line-info" />
                 </div>
               </div>
               <div class="row">
                 <ul class="list-group">
-                  <li class="list-group-item">350 messages</li>
-                  <li class="list-group-item">10K emails</li>
-                  <li class="list-group-item">24/7 Support</li>
+                  <li class="list-group-item">1 game</li>
+                  <li class="list-group-item">Reach Diamond rank</li>
+                  <li class="list-group-item">Secret strategy to Mute all players</li>
+                  <li class="list-group-item">Reminds you to scout</li>
+                  <li class="list-group-item">Using only Sharpshooter comp</li>
+                  <li class="list-group-item">No Support!</li>
                 </ul>
               </div>
             </div>
@@ -562,42 +561,42 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-3"><h1 class="title">BLK•</h1></div>
+        <div class="col-md-3"><h1 class="title">JORGE•</h1></div>
         <div class="col-md-3">
           <ul class="nav">
             <li class="nav-item">
               <a class="nav-link" [routerLink]="['/home']"> Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/landing']"> Landing </a>
+              <a class="nav-link" [routerLink]="['/landing']"> TFT </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/register']"> Register </a>
+              <a class="nav-link" [routerLink]="['/register']"> Genshin Impact </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/profile']"> Profile </a>
+              <a class="nav-link" [routerLink]="['/profile']"> Yugioh </a>
             </li>
           </ul>
         </div>
         <div class="col-md-3">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="https://creative-tim.com/contact-us?ref=blkdsa-footer">
+              <a class="nav-link" href="#">
                 Contact Us
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://creative-tim.com/about-us?ref=blkdsa-footer">
+              <a class="nav-link" href="#">
                 About Us
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://creative-tim.com/blog?ref=blkdsa-footer">
+              <a class="nav-link" href="#">
                 Blog
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://opensource.org/licenses/MIT">
+              <a class="nav-link" href="#">
                 License
               </a>
             </li>
@@ -608,24 +607,24 @@
           <div class="btn-wrapper profile">
             <a
               class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
-              href="https://twitter.com/creativetim"
+              href="https://twitter.com/stepback_letgo?lang=en"
               target="_blank"
             >
               <i class="fab fa-twitter"> </i>
             </a>
             <a
               class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
-              href="https://www.facebook.com/creativetim"
+              href="https://www.facebook.com/CalvinTahan"
               target="_blank"
             >
               <i class="fab fa-facebook-square"> </i>
             </a>
             <a
               class="btn btn-icon btn-neutral btn-round btn-simple"
-              href="https://dribbble.com/creativetim"
+              href="https://www.instagram.com/stepbackletgo/?hl=en"
               target="_blank"
             >
-              <i class="fab fa-dribbble"> </i>
+              <i class="fab fa-instagram"> </i>
             </a>
           </div>
         </div>
