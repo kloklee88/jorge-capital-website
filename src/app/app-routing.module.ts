@@ -4,9 +4,9 @@ import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule } from "@angular/router";
 
 import { IndexComponent } from "./pages/index/index.component";
-import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
-import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
-import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
+import { ProfilepageComponent } from "./pages/examples/yugioh/profilepage.component";
+import { RegisterpageComponent } from "./pages/examples/genshin/registerpage.component";
+import { LandingpageComponent } from "./pages/examples/tft/landingpage.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },

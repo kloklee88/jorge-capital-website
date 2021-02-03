@@ -18,9 +18,9 @@ import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { PopoverModule } from "ngx-bootstrap/popover";
 
 import { IndexComponent } from "./index/index.component";
-import { ProfilepageComponent } from "./examples/profilepage/profilepage.component";
-import { RegisterpageComponent } from "./examples/registerpage/registerpage.component";
-import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
+import { ProfilepageComponent } from "./examples/yugioh/profilepage.component";
+import { RegisterpageComponent } from "./examples/genshin/registerpage.component";
+import { LandingpageComponent } from "./examples/tft/landingpage.component";
 
 @NgModule({
   imports: [
