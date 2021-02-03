@@ -1,0 +1,298 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-transparent"
+  color-on-scroll="100"
+  id="navbar-top"
+>
+  <div class="container">
+    <div class="navbar-translate">
+      <a
+        class="navbar-brand"
+        placement="bottom"
+        [routerLink]="['/home']"
+        target="_blank"
+        tooltip="Designed and Coded by Creative Tim"
+      >
+        <span> JORGE• </span> (Capital)
+      </a>
+      <button
+        aria-controls="navigation-index"
+        aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler"
+        [attr.aria-expanded]="!isCollapsed"
+        (click)="isCollapsed = !isCollapsed"
+        id="navigation"
+        type="button"
+      >
+        <span class="navbar-toggler-bar bar1"> </span>
+        <span class="navbar-toggler-bar bar2"> </span>
+        <span class="navbar-toggler-bar bar3"> </span>
+      </button>
+    </div>
+    <div
+      class="navbar-collapse justify-content-end"
+      [collapse]="isCollapsed"
+      id="navigation"
+    >
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand"><a> JORGE• </a></div>
+          <div class="col-6 collapse-close text-right">
+            <button
+              aria-controls="navigation-index"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed"
+              (click)="isCollapsed = !isCollapsed"
+              id="navigation"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="https://twitter.com/stepback_letgo?lang=en"
+            placement="bottom"
+            target="_blank"
+            tooltip="Follow us on Twitter"
+          >
+            <i class="fab fa-twitter"> </i>
+            <p class="d-lg-none d-xl-none">Twitter</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="https://www.facebook.com/CalvinTahan"
+            placement="bottom"
+            target="_blank"
+            tooltip="Like us on Facebook"
+          >
+            <i class="fab fa-facebook-square"> </i>
+            <p class="d-lg-none d-xl-none">Facebook</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="https://www.instagram.com/stepbackletgo/?hl=en"
+            placement="bottom"
+            target="_blank"
+            tooltip="Follow us on Instagram"
+          >
+            <i class="fab fa-instagram"> </i>
+            <p class="d-lg-none d-xl-none">Instagram</p>
+          </a>
+        </li>
+        <li class="dropdown nav-item" dropdown>
+          <a
+            class="dropdown-toggle nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            dropdownToggle
+            href="javascript:void(0)"
+          >
+            <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Getting started
+          </a>
+          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+            <a class="dropdown-item" [routerLink]="['/register']">
+              <i class="tim-icons icon-planet"> </i> Genshin Impact
+            </a>
+            <a class="dropdown-item" [routerLink]="['/landing']">
+              <i class="tim-icons icon-coins"> </i> Teamfight Tactics
+            </a>
+            <a class="dropdown-item" [routerLink]="['/profile']">
+              <i class="tim-icons icon-shape-star"> </i> Yugioh
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link btn btn-default d-none d-lg-block"
+            href="https://www.twitch.tv/xxmadreloaderxx"
+          >
+            <i class="tim-icons icon-laptop"> </i> Follow on Twitch
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="page-header header-filter">
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="container">
+      <div class="content-center brand">
+        <h1 class="h1-seo">JORGE•</h1>
+        <h3>
+          A multi-sector corporation leading the technology, scientific, and financial industries
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="section section-navbars">
+      <img class="path" src="assets/img/path3.png" />
+    </div>
+    
+    <div class="section section-typo">
+      <img class="path" src="assets/img/path1.png" />
+
+      <img class="path path1" src="assets/img/path3.png" />
+
+      <div class="container">
+        <h1 class="title">News</h1>
+        <div id="typography">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="typography-line">
+                <span> 2/3/2021 </span>
+                <h2>Charitable Work to Support Underprivileged Minorities</h2>
+                <p>
+                  JORGE• (Capital) decided to make a hefty donation of $50,000 to the Kevin foundation. 
+                  The Kevin foundation helps fund minority children with their gambling addiction.
+                  Gambling is a rising epidemic from kids ranging from 4-10 years old and is only getting worse.
+                  JORGE• (Capital) is happy to support and raise awareness to the Kevin foundation.
+                </p>
+              </div>
+              <div class="typography-line">
+                <span> 1/28/2021 </span>
+                <h2>Fuel Discovered to Travel to Moon</h2>
+                <p>
+                  Reddit financial forum Wallstreetbets started dabbling in space travel recently. 
+                  They have determined that the velocity that it takes to escape the earth to go the Moon
+                  only takes blind faith and some investment funds. We here at JORGE• (Capital) are happy
+                  to expand with own our investment into the endeavor.
+                </p>
+              </div>
+              <div class="typography-line">
+                <span> 1/25/2021 </span>
+                <h2>The Importance of Rocks</h2>
+                <p>
+                  Crystal Chunks are currently the rarest non-elemental crystals in Genshin Impact, making a Crystal Chunk map a useful tool for farmers. 
+                  They're a shiny teal/blue which sets them apart from the other ore types in the game. 
+                  Crystal Chunks are key ingredients for making certain rare equipment and materials, and you will need a lot of them. 
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="space-50"></div>
+      </div>
+    </div>
+    
+    <div class="section section-signup">
+      <div class="container">
+        <div class="squares square-1"></div>
+        <div class="squares square-2"></div>
+        <div class="squares square-3"></div>
+        <div class="squares square-4"></div>
+        <div class="row row-grid justify-content-between align-items-center">
+          <div class="col-lg-6">
+            <h3 class="display-3 text-white">
+              Trust us and we will
+              <span class="text-white"> soar to even greater heights </span>
+            </h3>
+            <p class="text-white mb-3">
+              The video-game retailer GameStop (GME) soared 400% this week even as brokerages including Robinhood Markets clamped down on retail trades that burned short sellers and hedge funds. Its shares have gained 1,625% so far this year, and at one point it briefly took the No. 1 spot on the Russell 2000 Index from Plug Power Inc.
+            </p>
+            <div class="btn-wrapper">
+              <a class="btn btn-danger" [routerLink]="['/register']">
+                <i class="tim-icons icon-spaceship"> </i> Go to the Moon
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-lg-auto">
+            <!--TODO-->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section section-download" data-background-color="black" #target>
+      <img class="path" src="assets/img/path1.png" />
+    </div>
+    
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><h1 class="title">JORGE•</h1></div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/home']"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/landing']"> TFT </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/register']"> Genshin Impact </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/profile']"> Yugioh </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                License
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="title">Follow us:</h3>
+          <div class="btn-wrapper profile">
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="https://twitter.com/stepback_letgo?lang=en"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="https://www.facebook.com/CalvinTahan"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple"
+              href="https://www.instagram.com/stepbackletgo/?hl=en"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
