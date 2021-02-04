@@ -5,7 +5,7 @@ import Chart from "chart.js";
   selector: "app-landingpage",
   templateUrl: "landingpage.component.html"
 })
-export class LandingpageComponent implements OnInit, OnDestroy {
+export class TftComponent implements OnInit, OnDestroy {
   isCollapsed = true;
   constructor() {}
 

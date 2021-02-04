@@ -20,9 +20,9 @@ import { ModalModule } from "ngx-bootstrap/modal";
 import { PagesModule } from "./pages/pages.module";
 
 import { IndexComponent } from "./pages/index/index.component";
-import { ProfilepageComponent } from "./pages/examples/yugioh/profilepage.component";
-import { RegisterpageComponent } from "./pages/examples/genshin/registerpage.component";
-import { LandingpageComponent } from "./pages/examples/tft/landingpage.component";
+import { YugiohComponent } from "./pages/examples/yugioh/yugioh.component";
+import { GenshinComponent } from "./pages/examples/genshin/genshin.component";
+import { TftComponent } from "./pages/examples/tft/tft.component";
 @NgModule({
   declarations: [
     AppComponent

@@ -4,7 +4,7 @@ import { Component, OnInit, OnDestroy, HostListener } from "@angular/core";
   selector: "app-registerpage",
   templateUrl: "registerpage.component.html"
 })
-export class RegisterpageComponent implements OnInit, OnDestroy {
+export class GenshinComponent implements OnInit, OnDestroy {
   isCollapsed = true;
   focus;
   focus1;

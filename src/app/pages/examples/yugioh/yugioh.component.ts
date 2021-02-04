@@ -4,7 +4,7 @@ import { Component, OnInit, OnDestroy } from "@angular/core";
   selector: "app-profilepage",
   templateUrl: "profilepage.component.html"
 })
-export class ProfilepageComponent implements OnInit, OnDestroy {
+export class YugiohComponent implements OnInit, OnDestroy {
   isCollapsed = true;
   constructor() {}
 

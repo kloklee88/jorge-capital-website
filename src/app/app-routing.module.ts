@@ -4,16 +4,16 @@ import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule } from "@angular/router";
 
 import { IndexComponent } from "./pages/index/index.component";
-import { ProfilepageComponent } from "./pages/examples/yugioh/profilepage.component";
-import { RegisterpageComponent } from "./pages/examples/genshin/registerpage.component";
-import { LandingpageComponent } from "./pages/examples/tft/landingpage.component";
+import { YugiohComponent } from "./pages/examples/yugioh/yugioh.component";
+import { GenshinComponent } from "./pages/examples/genshin/genshin.component";
+import { TftComponent } from "./pages/examples/tft/tft.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: IndexComponent },
-  { path: "yugioh", component: ProfilepageComponent },
-  { path: "genshin", component: RegisterpageComponent },
-  { path: "tft", component: LandingpageComponent }
+  { path: "yugioh", component: YugiohComponent },
+  { path: "genshin", component: GenshinComponent },
+  { path: "tft", component: TftComponent }
 ];
 
 @NgModule({

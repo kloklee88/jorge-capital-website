@@ -18,9 +18,9 @@ import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { PopoverModule } from "ngx-bootstrap/popover";
 
 import { IndexComponent } from "./index/index.component";
-import { ProfilepageComponent } from "./examples/yugioh/profilepage.component";
-import { RegisterpageComponent } from "./examples/genshin/registerpage.component";
-import { LandingpageComponent } from "./examples/tft/landingpage.component";
+import { YugiohComponent } from "./examples/yugioh/yugioh.component";
+import { GenshinComponent } from "./examples/genshin/genshin.component";
+import { TftComponent } from "./examples/tft/tft.component";
 
 @NgModule({
   imports: [
@@ -43,15 +43,15 @@ import { LandingpageComponent } from "./examples/tft/landingpage.component";
   ],
   declarations: [
     IndexComponent,
-    ProfilepageComponent,
-    RegisterpageComponent,
-    LandingpageComponent
+    YugiohComponent,
+    GenshinComponent,
+    TftComponent
   ],
   exports: [
     IndexComponent,
-    ProfilepageComponent,
-    RegisterpageComponent,
-    LandingpageComponent
+    YugiohComponent,
+    GenshinComponent,
+    TftComponent
   ],
   providers: []
 })
