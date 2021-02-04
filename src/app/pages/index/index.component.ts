@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import noUiSlider from "nouislider";
+declare const TradingView: any;
 
 @Component({
   selector: "app-index",
@@ -44,6 +45,25 @@ export class IndexComponent implements OnInit, OnDestroy {
         max: 100
       }
     });
+  }
+  ngAfterViewInit() {
+    new TradingView.widget(
+      {
+      "width": 980,
+      "height": 610,
+      "symbol": "NYSE:GME",
+      "interval": "D",
+      "timezone": "America/New_York",
+      "theme": "dark",
+      "style": "1",
+      "locale": "en",
+      "toolbar_bg": "#f1f3f6",
+      "enable_publishing": false,
+      "hide_top_toolbar": true,
+      "allow_symbol_change": true,
+      "container_id": "tradingview_d1dd8"
+    }
+      );
   }
   ngOnDestroy() {
     var body = document.getElementsByTagName("body")[0];
