@@ -3,7 +3,7 @@ import Chart from "chart.js";
 
 @Component({
   selector: "app-landingpage",
-  templateUrl: "landingpage.component.html"
+  templateUrl: "tft.component.html"
 })
 export class TftComponent implements OnInit, OnDestroy {
   isCollapsed = true;
@@ -114,5 +114,19 @@ export class TftComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     var body = document.getElementsByTagName("body")[0];
     body.classList.remove("landing-page");
+  }
+
+  showAllAchievements() {
+    alert("Hej, you don't need to see any more of the company's achievements.")
+  }
+
+  getPlan() {
+    var modal = document.getElementById("plan-modal");
+    modal.style.display = "block";
+  }
+
+  closeModal() {
+    var modal = document.getElementById("plan-modal");
+    modal.style.display = "none";
   }
 }

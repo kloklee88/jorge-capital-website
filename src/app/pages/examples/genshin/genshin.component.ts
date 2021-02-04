@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy, HostListener } from "@angular/core";
 
 @Component({
   selector: "app-registerpage",
-  templateUrl: "registerpage.component.html"
+  templateUrl: "genshin.component.html"
 })
 export class GenshinComponent implements OnInit, OnDestroy {
   isCollapsed = true;

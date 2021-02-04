@@ -163,7 +163,7 @@
           <img
             alt="Circle image"
             class="img-fluid"
-            src="assets/img/etherum.png"
+            src="assets/img/tft-penguin.png"
           />
         </div>
       </div>
@@ -285,6 +285,7 @@
               <a
                 class="font-weight-bold text-info mt-5"
                 href="javascript:void(0)"
+                (click)="showAllAchievements()"
               >
                 Show all <i class="tim-icons icon-minimal-right text-info"> </i>
               </a>
@@ -495,7 +496,7 @@
               </div>
             </div>
             <div class="card-footer text-center">
-              <button class="btn btn-primary btn-simple">Get plan</button>
+              <button class="btn btn-primary btn-simple" (click)="getPlan()">Get plan</button>
             </div>
           </div>
         </div>
@@ -522,7 +523,7 @@
               </div>
             </div>
             <div class="card-footer text-center">
-              <button class="btn btn-success btn-simple">Get plan</button>
+              <button class="btn btn-success btn-simple" (click)="getPlan()">Get plan</button>
             </div>
           </div>
         </div>
@@ -551,13 +552,23 @@
               </div>
             </div>
             <div class="card-footer text-center">
-              <button class="btn btn-info btn-simple">Get plan</button>
+              <button class="btn btn-info btn-simple" (click)="getPlan()">Get plan</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <div id="plan-modal" class="modal custom-modal">
+    <!-- Modal content -->
+    <div class="modal-content custom-modal-content">
+      <div class="close" (click)="closeModal()">&times;</div>
+      <div>Please pay directly through Streamlabs. I will contact you about the plans... maybe. Note: You will not receive training!
+        <br><a href="https://streamlabs.com/xxmadreloaderxx/tip">DONATE</a></div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="container">
       <div class="row">
