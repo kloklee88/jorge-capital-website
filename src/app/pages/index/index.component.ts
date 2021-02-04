@@ -6,6 +6,8 @@ import noUiSlider from "nouislider";
   templateUrl: "index.component.html"
 })
 export class IndexComponent implements OnInit, OnDestroy {
+  moonCounter = 0;
+  believer = false;
   isCollapsed = true;
   focus;
   focus1;
@@ -46,5 +48,12 @@ export class IndexComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     var body = document.getElementsByTagName("body")[0];
     body.classList.remove("index-page");
+  }
+
+  goToMoon() {
+    this.moonCounter = this.moonCounter + 1;
+    if(this.moonCounter > 10) {
+      this.believer = true;
+    }
   }
 }

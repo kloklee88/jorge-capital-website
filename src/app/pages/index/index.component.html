@@ -205,13 +205,19 @@
               The video-game retailer GameStop (GME) soared 400% this week even as brokerages including Robinhood Markets clamped down on retail trades that burned short sellers and hedge funds. Its shares have gained 1,625% so far this year, and at one point it briefly took the No. 1 spot on the Russell 2000 Index from Plug Power Inc.
             </p>
             <div class="btn-wrapper">
-              <a class="btn btn-danger" [routerLink]="['/register']">
+              <a class="btn btn-danger text-white" (click)="goToMoon()">
                 <i class="tim-icons icon-spaceship"> </i> Go to the Moon
               </a>
             </div>
           </div>
           <div class="col-lg-6 mb-lg-auto">
-            <!--TODO-->
+            <div *ngIf="believer">
+              <img
+                  alt="TRUE BELIEVER"
+                  class="d-block"
+                  src="assets/img/gme-to-moon.png"
+                />
+            </div>
           </div>
         </div>
       </div>
